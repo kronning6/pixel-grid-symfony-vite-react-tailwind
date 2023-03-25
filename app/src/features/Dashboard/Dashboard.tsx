@@ -11,8 +11,8 @@ const Dashboard = (props: PropsWithChildren): JSX.Element => {
         <MenuItems
           items={[
             { to: '/', label: 'PixelGrid' },
-            { to: '/admin', label: 'Admin' },
             { to: '/profile', label: 'Profile' },
+            { to: '/admin', label: 'Admin' },
           ]}
         />
       </AppBar>
