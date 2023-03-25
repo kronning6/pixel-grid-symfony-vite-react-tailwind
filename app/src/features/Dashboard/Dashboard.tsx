@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from 'react';
 import AppBar from '../../components/AppBar/AppBar';
 import MenuItems from '../../components/MenuItems/MenuItems';
 import AppWrapper from '../../components/AppWrapper/AppWrapper';
+import AppBody from '../../components/AppBody/AppBody';
 
 const Dashboard = (props: PropsWithChildren): JSX.Element => {
   return (
@@ -15,7 +16,7 @@ const Dashboard = (props: PropsWithChildren): JSX.Element => {
           ]}
         />
       </AppBar>
-      <div className="h-full">{props.children}</div>
+      <AppBody>{props.children}</AppBody>
     </AppWrapper>
   );
 };
