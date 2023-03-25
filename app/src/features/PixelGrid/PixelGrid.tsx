@@ -6,7 +6,7 @@ const PixelGrid = (): JSX.Element => {
       <div className="flex-grow">
         <div className="flex h-full flex-col">
           <div>
-            <h1 className="my-2 text-center text-3xl text-white">PixelGrid</h1>
+            <h1 className="my-2 text-center text-3xl">PixelGrid</h1>
           </div>
           <div className="h-full overflow-scroll scrollbar-hide">
             <h1 className="text-center text-3xl">
@@ -18,10 +18,16 @@ const PixelGrid = (): JSX.Element => {
       <div className="w-72">
         <div className="flex h-full flex-col">
           <div>
-            <h1 className="my-2 text-center text-3xl text-white">Grid Log</h1>
+            <h1 className="my-2 text-center text-3xl">Grid Log</h1>
           </div>
           <div className="h-full overflow-scroll scrollbar-hide">
             <div className="container mx-auto p-5">
+              <p>Player A claimed pixel (0,0)</p>
+              <p>Player A claimed pixel (0,0)</p>
+              <p>Player A claimed pixel (0,0)</p>
+              <p>Player A claimed pixel (0,0)</p>
+              <p>Player A claimed pixel (0,0)</p>
+              <p>Player A claimed pixel (0,0)</p>
               <p>Player A claimed pixel (0,0)</p>
               <p>Player A claimed pixel (0,0)</p>
               <p>Player A claimed pixel (0,0)</p>

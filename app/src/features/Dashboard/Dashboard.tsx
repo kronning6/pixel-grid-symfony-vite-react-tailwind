@@ -8,7 +8,7 @@ const DashboardBody = (props: PropsWithChildren): JSX.Element => {
   return (
     <div className="flex h-full flex-col">
       <div className="h-full overflow-hidden">{props.children}</div>
-      <div className="p-5 text-center font-extralight text-white">
+      <div className="p-5 text-center font-extralight">
         A Kyle Ronning Production
       </div>
     </div>
@@ -16,9 +16,13 @@ const DashboardBody = (props: PropsWithChildren): JSX.Element => {
 };
 
 const Dashboard = (props: PropsWithChildren): JSX.Element => {
+  const themeColors = {
+    fg: null, // '#ffffff',
+    bg: null, // '#195cab',
+  };
   return (
-    <AppWrapper>
-      <AppBar>
+    <AppWrapper customColor={themeColors.fg} customBackground={themeColors.bg}>
+      <AppBar customColor={themeColors.fg} customBackground={themeColors.bg}>
         <MenuItems
           items={[
             { to: '/', label: 'PixelGrid' },
