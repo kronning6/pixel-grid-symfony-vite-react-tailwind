@@ -13,8 +13,11 @@ const MenuItems = (props: PropsWithChildren<MenuItemsProps>): JSX.Element => {
           key={i.to}
           className="pr-5"
           to={i.to}
+          inactiveProps={{
+            className: 'font-extralight',
+          }}
           activeProps={{
-            className: 'font-bold underline',
+            className: 'font-bold',
           }}
           activeOptions={{ exact: true }}
         >
